@@ -284,6 +284,7 @@ public:
                     Phase = SKADI;
                     me->SetCanFly(false);
                     me->Dismount();
+					me->SetFullHealth();
                     if (Creature* pGrauf = me->SummonCreature(NPC_GRAUF, me->GetPositionX(), me->GetPositionY(), me->GetPositionZ(), 0, TEMPSUMMON_CORPSE_TIMED_DESPAWN, 3*IN_MILLISECONDS))
                     {
                         pGrauf->GetMotionMaster()->MoveFall();
