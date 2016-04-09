@@ -12,6 +12,8 @@
 
 set(scripts_STAT_SRCS
   ${scripts_STAT_SRCS}
+  custom_script_loader.cpp
+  WelcomeOnFirstLogin.cpp
 #  ${sources_Custom}
 )
 
