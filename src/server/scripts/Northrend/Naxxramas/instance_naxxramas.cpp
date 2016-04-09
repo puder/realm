@@ -224,6 +224,10 @@ class instance_naxxramas : public InstanceMapScript
                         if (GetBossState(BOSS_HORSEMEN) == DONE)
                             go->RemoveFlag(GAMEOBJECT_FLAGS, GO_FLAG_NOT_SELECTABLE);
                         break;
+					case 202278:
+						if (GetBossState(BOSS_MAEXXNA) == DONE && GetBossState(BOSS_THADDIUS) == DONE && GetBossState(BOSS_LOATHEB) == DONE && GetBossState(BOSS_HORSEMEN) == DONE)
+							go->RemoveFlag(GAMEOBJECT_FLAGS, GO_FLAG_NOT_SELECTABLE);
+						break;
                     case GO_BIRTH:
                         if (hadSapphironBirth || GetBossState(BOSS_SAPPHIRON) == DONE)
                         {
